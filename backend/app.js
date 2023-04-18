@@ -17,7 +17,7 @@ const cors = require('cors');
 //config
 dotenv.config({ path: "backend/config/config.env" });
 
-app.use(cors())
+app.use(cors({origin : "*"}))
 app.use(express.json());
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }));
