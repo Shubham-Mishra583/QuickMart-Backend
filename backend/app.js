@@ -13,7 +13,7 @@ const order = require("./routes/orderRoute");
 const payment = require("./routes/paymentRoute");
 
 const cors = require('cors');
-
+app.use(cors({origin : "*"}))
 //config
 dotenv.config({ path: "backend/config/config.env" });
 
